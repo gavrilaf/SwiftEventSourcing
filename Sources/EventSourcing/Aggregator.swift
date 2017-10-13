@@ -14,21 +14,23 @@ protocol AggregatorDelegate: class {
     func unknown(command: Command)
 }
 
-struct Aggregator {
-    let id: String
+public struct Aggregator {
+    public let id: String
     
-    weak var delegate: AggregatorDelegate?
-    
-    init(id: String) {
+    public init(id: String) {
         self.id = id
     }
     
-    init(id: String, withHistory events: Array<Event>) {
+    public var balance: Int {
+        return _balance
+    }
+    
+    public init(id: String, withHistory events: Array<Event>) {
         self.id = id
         load(events: events)
     }
     
-    mutating func handle(command: Command) {
+    public mutating func handle(command: Command) {
         switch command {
         case let deposit as DepositCommand:
             self.deposit(amount: deposit.amount)
@@ -39,6 +41,8 @@ struct Aggregator {
         }
     }
     
+    
+    weak var delegate: AggregatorDelegate?
     
     private mutating func deposit(amount: Int) {
         _balance += amount

@@ -7,18 +7,30 @@
 
 import Foundation
 
-protocol Command {
+public protocol Command {
     var aggregatorId: String { get }
 }
 
 // MARK:
-struct DepositCommand : Command {
-    let aggregatorId: String
-    let amount: Int
+public struct DepositCommand : Command {
+    
+    public init(aggregator id: String, amount: Int) {
+        self.aggregatorId = id
+        self.amount = amount
+    }
+    
+    public let aggregatorId: String
+    public let amount: Int
 }
 
 // MARK:
-struct WithdrawalCommand: Command {
-    let aggregatorId: String
-    let amount: Int
+public struct WithdrawalCommand: Command {
+    
+    public init(aggregator id: String, amount: Int) {
+        self.aggregatorId = id
+        self.amount = amount
+    }
+    
+    public let aggregatorId: String
+    public let amount: Int
 }

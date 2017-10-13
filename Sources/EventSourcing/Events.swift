@@ -7,18 +7,18 @@
 
 import Foundation
 
-protocol Event {
+public protocol Event {
     var aggregatorId: String { get }
 }
 
 // MARK:
-struct DepositEvent : Event {
-    let aggregatorId: String
-    let amount: Int
+public struct DepositEvent : Event {
+    public let aggregatorId: String
+    public let amount: Int
 }
 
 // MARK:
-struct WithdrawalEvent: Event {
-    let aggregatorId: String
-    let amount: Int
+public struct WithdrawalEvent: Event {
+    public let aggregatorId: String
+    public let amount: Int
 }

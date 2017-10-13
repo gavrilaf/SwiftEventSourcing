@@ -1,13 +1,13 @@
 import Foundation
 
 
-class Manager {
+public class Manager {
     
-    init(eventStorage: EventStorage) {
+    public init(eventStorage: EventStorage) {
         self.storage = eventStorage
     }
     
-    func createAggregator() -> String {
+    public func createAggregator() -> String {
         let id = UUID().uuidString
         
         var aggregator = Aggregator(id: id)
@@ -18,8 +18,11 @@ class Manager {
         return id
     }
     
+    public func getAggregator(id: String) -> Aggregator? {
+        return aggregators[id]
+    }
     
-    func handle(command: Command) {
+    public func handle(command: Command) {
         aggregators[command.aggregatorId]?.handle(command: command)
     }
     

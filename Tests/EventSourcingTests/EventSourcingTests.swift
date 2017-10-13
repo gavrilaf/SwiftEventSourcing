@@ -1,16 +1,26 @@
 import XCTest
-@testable import EventSourcing
+import EventSourcing
 
 class EventSourcingTests: XCTestCase {
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct
-        // results.
-        XCTAssertEqual(EventSourcing().text, "Hello, World!")
+    
+    let storage = InMemoryEventStorage()
+    
+    func testSimpleAggregator() {
+        let manager = Manager(eventStorage: storage)
+        
+        let id = manager.createAggregator()
+        
+        manager.handle(command: DepositCommand(aggregator: id, amount: 10))
+        manager.handle(command: WithdrawalCommand(aggregator: id, amount: 2))
+        manager.handle(command: WithdrawalCommand(aggregator: id, amount: 2))
+        manager.handle(command: WithdrawalCommand(aggregator: id, amount: 2))
+        
+        XCTAssertEqual(manager.getAggregator(id: id)?.balance, 4)
+        
     }
 
 
     static var allTests = [
-        ("testExample", testExample),
+        ("testSimpleAggregator", testSimpleAggregator),
     ]
 }

@@ -7,18 +7,21 @@
 
 import Foundation
 
-protocol EventStorage {
+public protocol EventStorage {
     func loadEvents(forAccount id: String, completion: (Array<Event>) -> Void)
     mutating func save(event: Event)
 }
 
 // MARK:
-struct InMemoryEventStorage: EventStorage {
-    func loadEvents(forAccount id: String, completion: (Array<Event>) -> Void) {
+public struct InMemoryEventStorage: EventStorage {
+    
+    public init() {}
+    
+    public func loadEvents(forAccount id: String, completion: (Array<Event>) -> Void) {
         
     }
     
-    mutating func save(event: Event) {
+    public mutating func save(event: Event) {
         storage[event.aggregatorId] = event
     }
     
