@@ -3,24 +3,32 @@ import EventSourcing
 
 class EventSourcingTests: XCTestCase {
     
-    let storage = InMemoryEventStorage()
+    var storage: InMemoryEventStorage!
+    var manager: AccountManager!
     
-    func testSimpleAggregator() {
-        let manager = Manager(eventStorage: storage)
+    override func setUp() {
+        storage = InMemoryEventStorage()
+        manager = AccountManager(eventStorage: storage)
+    }
+    
+    func testCreateAccount() {
+        let account = manager.openAccount()
+        XCTAssertEqual(account.balance, 0)
+        XCTAssertEqual(account.status, .created)
         
-        let id = manager.createAggregator()
-        
-        manager.handle(command: DepositCommand(aggregator: id, amount: 10))
-        manager.handle(command: WithdrawalCommand(aggregator: id, amount: 2))
-        manager.handle(command: WithdrawalCommand(aggregator: id, amount: 2))
-        manager.handle(command: WithdrawalCommand(aggregator: id, amount: 2))
-        
-        XCTAssertEqual(manager.getAggregator(id: id)?.balance, 4)
-        
+        let account2 = manager.getAccount(id: account.id)
+        XCTAssertNotNil(account2)
+        XCTAssertEqual(account2!.id, account.id)
     }
 
+    func testActivate() {
+        let account = manager.openAccount()
+        _ = manager.handle(command: .activate, forAccount: account.id)
+        
+        XCTAssertEqual(account.status, .activated)
+    }
 
     static var allTests = [
-        ("testSimpleAggregator", testSimpleAggregator),
+        ("testCreateAccount", testCreateAccount),
     ]
 }

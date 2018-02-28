@@ -1,6 +1,5 @@
 //
 //  EventStorage.swift
-//  EventSourcing
 //
 //  Created by Eugen Fedchenko on 10/12/17.
 //
@@ -8,22 +7,35 @@
 import Foundation
 
 public protocol EventStorage {
-    func loadEvents(forAccount id: String, completion: (Array<Event>) -> Void)
-    mutating func save(event: Event)
+    func save(account id: String)
+    func save(event: Event, forAccount id: String)
+    
+    func getAccounts() -> Array<String>
+    func getEvents(forAccount id: String) -> Array<Event>
 }
 
 // MARK:
-public struct InMemoryEventStorage: EventStorage {
+
+public class InMemoryEventStorage: EventStorage {
     
     public init() {}
     
-    public func loadEvents(forAccount id: String, completion: (Array<Event>) -> Void) {
-        
+    public func save(account id: String) {
+        events[id] = []
     }
     
-    public mutating func save(event: Event) {
-        storage[event.aggregatorId] = event
+    public func save(event: Event, forAccount id: String) {
+        events[id]?.append(event)
     }
     
-    private var storage = [String : Event]()
+    public func getAccounts() -> Array<String> {
+        return Array(events.keys)
+    }
+    
+    public func getEvents(forAccount id: String) -> Array<Event> {
+        return events[id] ?? []
+    }
+    
+    private var events = [String: Array<Event>]()
 }
+

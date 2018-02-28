@@ -1,47 +1,38 @@
 import Foundation
 
-
-public class Manager {
+public class AccountManager {
     
     public init(eventStorage: EventStorage) {
         self.storage = eventStorage
     }
     
-    public func createAggregator() -> String {
-        let id = UUID().uuidString
+    /**
+     * Create new account with zero balance
+     */
+    public func openAccount() -> Account {
+        let account = AccountImpl(id: UUID().uuidString, history: [])
+        accounts[account.id] = account
         
-        var aggregator = Aggregator(id: id)
-        aggregator.delegate = self
-        
-        aggregators[id] = aggregator
-        
-        return id
+        return account
     }
     
-    public func getAggregator(id: String) -> Aggregator? {
-        return aggregators[id]
+    public func getAccount(id: String) -> Account? {
+        return accounts[id]
     }
     
-    public func handle(command: Command) {
-        aggregators[command.aggregatorId]?.handle(command: command)
+    public func handle(command: Command, forAccount id: String) -> CommandResult {
+        guard let account = accounts[id] else {
+            return CommandResult(error: .notFound)
+        }
+        
+        return account.handle(command: command).flatMap { (event) -> CommandResult in
+            storage.save(event: event, forAccount: id)
+            return CommandResult(value: event)
+        }
     }
     
-    private var aggregators = [String : Aggregator]()
+    private var accounts = [String : AccountImpl]()
     private var storage: EventStorage
 }
 
-extension Manager: AggregatorDelegate {
-    func aggregator(event: Event) {
-        storage.save(event: event)
-        
-        print("event, \(event)")
-    }
-    
-    func notEnoughFunds(aggregatorId: String) {
-        print("not enough funds, aggregator = \(aggregatorId)")
-    }
-    
-    func unknown(command: Command) {
-        print("unknown command, \(command)")
-    }
-}
+

@@ -1,0 +1,10 @@
+version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
+options: "a957edffac27832f86f293f8e3fd8d7b"
+build_time: [1519851810, 826916000]
+inputs:
+  "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Sources/EventSourcing/Result.swift": [1519850021, 0]
+  "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Sources/EventSourcing/Account.swift": [1519850046, 0]
+  "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Sources/EventSourcing/Command.swift": [1519842460, 0]
+  "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Sources/EventSourcing/EventStorage.swift": [1519851739, 0]
+  "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Sources/EventSourcing/Event.swift": [1519847425, 0]
+  "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Sources/EventSourcing/Manager.swift": [1519851806, 0]

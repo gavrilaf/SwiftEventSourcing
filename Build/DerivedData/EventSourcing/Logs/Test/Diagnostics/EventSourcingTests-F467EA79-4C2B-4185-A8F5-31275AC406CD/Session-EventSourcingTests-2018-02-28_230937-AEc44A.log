@@ -1,0 +1,192 @@
+23:09:37.952 Xcode[95865:1139451] Beginning test session EventSourcingTests-0835D95F-CE27-4C47-B7E8-F42AE50CF27A at 2018-02-28 23:09:37.952 with Xcode 9C40b on target <DVTLocalComputer: 0x7f85948a7e70 (My Mac | x86_64h)> (10.13.3 (17D102))
+23:09:37.952 Xcode[95865:1139451] Launching with Xcode.DebuggerFoundation.Launcher.LLDB
+23:09:37.953 Xcode[95865:1139451] Test standard output and standard error is at /var/folders/xh/1rlb62b16cz8lbvxz67gyvf80000gn/T/com.apple.dt.XCTest/IDETestRunSession-58DDB4F4-E855-4C34-AA3E-D5DBE2123169/EventSourcingTests-F467EA79-4C2B-4185-A8F5-31275AC406CD/StandardOutputAndStandardError.txt
+23:09:39.659 Xcode[95865:1139451] Launch session started.
+23:09:39.662 Xcode[95865:1139451] Setting up test runner session
+23:09:39.737 Xcode[95865:1769410] Got socket for DTX-layer communication.
+23:09:39.737 Xcode[95865:1769410] XPC connection for control was invalidated.
+23:09:39.737 Xcode[95865:1769582] Received connection for test runner session
+23:09:39.737 Xcode[95865:1769582] Listening for proxy connection request from the test bundle
+23:09:39.738 Xcode[95865:1139451] Test runner session acquired connection.
+23:09:39.738 Xcode[95865:1139451] Waiting for test process to launch.
+23:09:39.738 Xcode[95865:1769582] Initiating session with identifier: 0835D95F-CE27-4C47-B7E8-F42AE50CF27A
+23:09:39.739 Xcode[95865:1769582] Got reply to session initiation request with identifier 0835D95F-CE27-4C47-B7E8-F42AE50CF27A (result:error): 25: (null)
+23:09:39.792 Xcode[95865:1139451] Adding console adaptor <IDEConsoleAdaptor: 0x7f8546246020 'target' stdin: <IDEMasterPtyFileHandle: 0x7f856c7313c0 MasterFH: <NSConcreteFileHandle: 0x7f854be68380> 148 SlaveFH: <NSConcreteFileHandle: 0x7f854ca2b3d0> 166> 148 stdout: <IDEMasterPtyFileHandle: 0x7f856c7313c0 MasterFH: <NSConcreteFileHandle: 0x7f854be68380> 148 SlaveFH: <NSConcreteFileHandle: 0x7f854ca2b3d0> 166> 148 stderr: (null) 0> for test session 0835D95F-CE27-4C47-B7E8-F42AE50CF27A.
+23:09:39.833 Xcode[95865:1139451] Test process runnable PID is 39083.
+23:09:40.457 Xcode[95865:1139451] Waiting for test process to check in..., will wait up to 120s
+23:09:40.731 Xcode[95865:1769534] Handling proxy channel request from test runner
+23:09:40.731 Xcode[95865:1769534] Test runner is ready, running protocol 25, requires at least version 8. Control framework is running 25 and requires at least 8
+23:09:40.731 Xcode[95865:1139451] Test runner session successfully initiated.
+23:09:40.731 Xcode[95865:1139451] Creating the daemon control session.
+23:09:40.731 Xcode[95865:1139451] Whitelisting test process ID 39083
+23:09:40.731 Xcode[95865:1139451] Got authorization request for pid 39083
+23:09:40.733 Xcode[95865:1769534] Got socket for DTX-layer communication.
+23:09:40.733 Xcode[95865:1769534] XPC connection for control was invalidated.
+23:09:40.733 Xcode[95865:1769410] Requesting authorization for pid 39083
+23:09:40.734 Xcode[95865:1769534] Got reply to authorization request for pid 39083 (result:error): 25: (null)
+23:09:40.734 Xcode[95865:1139451] Got whitelisting response from test daemon. Success: 1
+23:09:40.734 Xcode[95865:1139451] Registering/updating daemon-based crash report observer for process names (
+    XCTRunner,
+    xctest
+), report directories: (
+    "/Users/eugenf/Library/Logs/DiagnosticReports",
+    "/Library/Logs/DiagnosticReports"
+).
+23:09:40.735 testmanagerd[39082:1769590] Received request to collect crash reports in directories '/Users/eugenf/Library/Logs/DiagnosticReports', '/Library/Logs/DiagnosticReports' for processes with names 'XCTRunner', 'xctest'
+23:09:40.735 testmanagerd[39082:1769590] Initializing crash report observer for /Users/eugenf/Library/Logs/DiagnosticReports
+23:09:40.735 testmanagerd[39082:1769590] Getting files in /Users/eugenf/Library/Logs/DiagnosticReports
+23:09:40.736 testmanagerd[39082:1769590] Found 34 files in /Users/eugenf/Library/Logs/DiagnosticReports
+23:09:40.736 testmanagerd[39082:1769590] Started monitoring /Users/eugenf/Library/Logs/DiagnosticReports
+23:09:40.736 testmanagerd[39082:1769590] Initializing crash report observer for /Library/Logs/DiagnosticReports
+23:09:40.736 testmanagerd[39082:1769590] Getting files in /Library/Logs/DiagnosticReports
+23:09:40.738 Xcode[95865:1139451] Telling test runner to start executing tests.
+23:09:40.737 testmanagerd[39082:1769590] Found 171 files in /Library/Logs/DiagnosticReports
+23:09:40.738 testmanagerd[39082:1769590] Started monitoring /Library/Logs/DiagnosticReports
+23:09:40.674 xctest[39083:1769596] Linked XCTest.framework from /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks/XCTest.framework/Versions/A/XCTest, built with Xcode 0920(9C39), modified on Friday, November 17, 2017 at 10:56:46 AM Eastern European Standard Time
+XCTest.framework bundle version: 13764
+23:09:40.676 xctest[39083:1769596] System uptime: 1d 8:08:22
+23:09:40.676 xctest[39083:1769596] Process arguments: (
+    "/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Xcode/Agents/xctest",
+    "-NSTreatUnknownArgumentsAsOpen",
+    NO,
+    "-ApplePersistenceIgnoreState",
+    YES
+)
+23:09:40.676 xctest[39083:1769596] Process environment: {
+    "Apple_PubSub_Socket_Render" = "/private/tmp/com.apple.launchd.AXL4SD5sEE/Render";
+    "DYLD_FRAMEWORK_PATH" = "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Build/Products/Debug:/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Build/Products/Debug:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks:/Applications/Xcode.app/Contents/SharedFrameworks";
+    "DYLD_LIBRARY_PATH" = "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Build/Products/Debug:/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Build/Products/Debug:/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/Library/Frameworks:/Applications/Xcode.app/Contents/SharedFrameworks";
+    HOME = "/Users/eugenf";
+    IDEiPhoneInternalTestBundleName = "EventSourcingTests.xctest";
+    LOGNAME = eugenf;
+    "MTC_CRASH_ON_REPORT" = 1;
+    MallocNanoZone = 0;
+    NSUnbufferedIO = YES;
+    "OS_ACTIVITY_DT_MODE" = YES;
+    PATH = "/Applications/Xcode.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin";
+    PWD = "/tmp";
+    SHELL = "/bin/bash";
+    "SSH_AUTH_SOCK" = "/private/tmp/com.apple.launchd.cfWczqBWDb/Listeners";
+    TMPDIR = "/var/folders/xh/1rlb62b16cz8lbvxz67gyvf80000gn/T/";
+    USER = eugenf;
+    "XCODE_DBG_XPC_EXCLUSIONS" = "com.apple.dt.xctestSymbolicator";
+    XCTestConfigurationFilePath = "/var/folders/xh/1rlb62b16cz8lbvxz67gyvf80000gn/T/com.apple.dt.XCTest/IDETestRunSession-58DDB4F4-E855-4C34-AA3E-D5DBE2123169/EventSourcingTests-F467EA79-4C2B-4185-A8F5-31275AC406CD/LaunchSessions/0835D95F-CE27-4C47-B7E8-F42AE50CF27A/remote-container/tmp/EventSourcingTests-0835D95F-CE27-4C47-B7E8-F42AE50CF27A.xctestconfiguration";
+    "XPC_FLAGS" = 0x0;
+    "XPC_SERVICE_NAME" = "com.apple.dt.Xcode.17172";
+    "__CF_USER_TEXT_ENCODING" = "0x1F5:0x0:0x0";
+    "__XCODE_BUILT_PRODUCTS_DIR_PATHS" = "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Build/Products/Debug";
+    "__XPC_DYLD_FRAMEWORK_PATH" = "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Build/Products/Debug";
+    "__XPC_DYLD_LIBRARY_PATH" = "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Build/Products/Debug";
+}
+23:09:40.676 xctest[39083:1769596] App Sandbox active: NO
+23:09:40.676 xctest[39083:1769596] Loading test bundle at: file:///Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Build/Products/Debug/EventSourcingTests.xctest/
+23:09:40.726 xctest[39083:1769596] Finished loading test bundle
+23:09:40.726 xctest[39083:1769596] Readying IDE session
+23:09:40.727 xctest[39083:1769596] <XCTWaiter: 0x10230d210, state: XCTWaiterStateInProgress> entering wait loop for 5.00s with expectations: (
+    "Exchange protocol versions with daemon"
+)
+23:09:40.728 xctest[39083:1769644] Got daemon protocol version 18
+23:09:40.728 xctest[39083:1769644] <XCTWaiter: 0x10230d210, state: XCTWaiterStateSucceeded>: cancelWaiting
+23:09:40.728 xctest[39083:1769596] <XCTWaiter: 0x10230d210, state: XCTWaiterStateSucceeded> done waiting
+23:09:40.728 xctest[39083:1769596] <XCTWaiter: 0x10230d210, state: XCTWaiterStateSucceeded> cleaning up Exchange protocol versions with daemon
+23:09:40.729 xctest[39083:1769596] Requesting IDE connection transport
+23:09:40.729 xctest[39083:1769596] <XCTWaiter: 0x10321d950, state: XCTWaiterStateInProgress> entering wait loop for 60.00s with expectations: (
+    "Transport for IDE session acquired"
+)
+23:09:40.729 xctest[39083:1769644] Creating transport with received transport data
+23:09:40.730 xctest[39083:1769646] <XCTWaiter: 0x10321d950, state: XCTWaiterStateSucceeded>: cancelWaiting
+23:09:40.730 xctest[39083:1769596] <XCTWaiter: 0x10321d950, state: XCTWaiterStateSucceeded> done waiting
+23:09:40.730 xctest[39083:1769596] <XCTWaiter: 0x10321d950, state: XCTWaiterStateSucceeded> cleaning up Transport for IDE session acquired
+23:09:40.730 xctest[39083:1769596] Creating connection with transport <DTXFileDescriptorTransport: 0x102311000>
+23:09:40.730 xctest[39083:1769596] Creating the proxy channel with connection <DTXConnection 0x10310f9a0 : x1>
+23:09:40.731 xctest[39083:1769596] Messaging IDE proxy - _XCT_testBundleReadyWithProtocolVersion:25 minimumVersion:8
+23:09:40.731 xctest[39083:1769596] <XCTWaiter: 0x102312ca0, state: XCTWaiterStateInProgress> entering wait loop for 60.00s with expectations: (
+    "IDE session ready for test plan"
+)
+23:09:40.731 xctest[39083:1769644] _XCT_testBundleReadyWithProtocolVersion:minimumVersion: reply received
+23:09:40.738 xctest[39083:1769644] _IDE_startExecutingTestPlanWithProtocolVersion:25
+23:09:40.739 xctest[39083:1769644] <XCTWaiter: 0x102312ca0, state: XCTWaiterStateSucceeded>: cancelWaiting
+23:09:40.739 xctest[39083:1769596] <XCTWaiter: 0x102312ca0, state: XCTWaiterStateSucceeded> done waiting
+23:09:40.739 xctest[39083:1769596] <XCTWaiter: 0x102312ca0, state: XCTWaiterStateSucceeded> cleaning up IDE session ready for test plan
+23:09:40.744 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: parseConsoleOutputFromOriginalOutput: called, 63 bytes written out to StandardOutputAndStandardError
+Test Suite 'Selected tests' started at 2018-02-28 23:09:40.743
+Test Suite 'EventSourcingTests.xctest' started at 2018-02-28 23:09:40.743
+Test Suite 'EventSourcingTests' started at 2018-02-28 23:09:40.744
+23:09:40.744 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: parseConsoleOutputFromOriginalOutput: called, 221 bytes written out to StandardOutputAndStandardError
+23:09:40.745 Xcode[95865:1139451] Starting test plan, clearing initialization timeout timer.
+23:09:40.742 xctest[39083:1769596] Loading test suite...
+23:09:40.742 xctest[39083:1769596] Finished loading test suite, took 0.000s
+23:09:40.742 xctest[39083:1769596] -[XCTRunnerIDESession testBundleWillStart:]
+23:09:40.742 xctest[39083:1769596] Running suite...
+23:09:40.743 xctest[39083:1769596] -[XCTRunnerIDESession testSuiteWillStart:]
+23:09:40.745 Xcode[95865:1139451] _XCT_testSuite:Selected tests didStartAt:2018-02-28 21:09:40 +0000
+23:09:40.745 Xcode[95865:1769410] (LOG ARBITER) Rotating message buffer with 6 messages.
+23:09:40.743 xctest[39083:1769596] -[XCTRunnerIDESession testSuiteWillStart:]
+23:09:40.745 Xcode[95865:1139451] _XCT_testSuite:EventSourcingTests.xctest didStartAt:2018-02-28 21:09:40 +0000
+23:09:40.744 xctest[39083:1769596] -[XCTRunnerIDESession testSuiteWillStart:]
+23:09:40.745 Xcode[95865:1139451] _XCT_testSuite:EventSourcingTests didStartAt:2018-02-28 21:09:40 +0000
+23:09:40.744 xctest[39083:1769596] -[XCTRunnerIDESession testCaseWillStart:] EventSourcingTests.EventSourcingTests testCreateAccount
+23:09:40.745 Xcode[95865:1139451] _XCT_testCaseDidStartForTestClass:EventSourcingTests.EventSourcingTests method:testCreateAccount
+Test Case '-[EventSourcingTests.EventSourcingTests testCreateAccount]' started.
+23:09:40.846 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: parseConsoleOutputFromOriginalOutput: called, 0 bytes written out to StandardOutputAndStandardError
+23:09:40.978 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: parseConsoleOutputFromOriginalOutput: called, 258 bytes written out to StandardOutputAndStandardError
+23:09:40.977 xctest[39083:1769596] -[XCTRunnerIDESession testCase:didFailWithDescription:inFile:atLine:]
+23:09:40.979 Xcode[95865:1139451] _XCT_testCaseDidFailForTestClass:EventSourcingTests.EventSourcingTests method:testCreateAccount withMessage:XCTAssertEqual failed: ("created") is not equal to ("activated") -  file:/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Tests/EventSourcingTests/EventSourcingTests.swift line:17
+23:09:40.978 xctest[39083:1769596] -[EventSourcingTests testCreateAccount] started activity <XCActivityRecord: 0x103259690> 2018-02-28 21:09:40 +0000: Assertion Failure: EventSourcingTests.swift:17: XCTAssertEqual failed: ("created") is not equal to ("activated") - 
+/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Tests/EventSourcingTests/EventSourcingTests.swift:17: error: -[EventSourcingTests.EventSourcingTests testCreateAccount] : XCTAssertEqual failed: ("created") is not equal to ("activated") - 
+23:09:40.980 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: parseConsoleOutputFromOriginalOutput: called, 95 bytes written out to StandardOutputAndStandardError
+Test Case '-[EventSourcingTests.EventSourcingTests testCreateAccount]' failed (0.236 seconds).
+Test Suite 'EventSourcingTests' failed at 2018-02-28 23:09:40.980.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.236 (0.236) seconds
+23:09:40.983 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: parseConsoleOutputFromOriginalOutput: called, 289 bytes written out to StandardOutputAndStandardError
+Test Suite 'EventSourcingTests.xctest' failed at 2018-02-28 23:09:40.980.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.236 (0.237) seconds
+23:09:40.983 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: parseConsoleOutputFromOriginalOutput: called, 137 bytes written out to StandardOutputAndStandardError
+23:09:40.987 Xcode[95865:1139451] -[EventSourcingTests.EventSourcingTests testCreateAccount] will start activity 3B0E0251-4D70-4939-AE53-E1F2179C4759:'Assertion Failure: EventSourcingTests.swift:17: XCTAssertEqual failed: ("created") is not equal to ("activated") - '
+23:09:40.979 xctest[39083:1769596] -[EventSourcingTests testCreateAccount] finished activity <XCActivityRecord: 0x103259690> 2018-02-28 21:09:40 +0000: Assertion Failure: EventSourcingTests.swift:17: XCTAssertEqual failed: ("created") is not equal to ("activated") -  (0.000639915s)
+23:09:40.991 Xcode[95865:1139451] -[EventSourcingTests.EventSourcingTests testCreateAccount] did finish activity 3B0E0251-4D70-4939-AE53-E1F2179C4759:'Assertion Failure: EventSourcingTests.swift:17: XCTAssertEqual failed: ("created") is not equal to ("activated") - '
+23:09:40.980 xctest[39083:1769596] -[XCTRunnerIDESession testCaseDidFinish:]
+23:09:40.991 Xcode[95865:1139451] _XCT_testCaseDidFinishForTestClass:EventSourcingTests.EventSourcingTests method:testCreateAccount withStatus:failed duration:0.2356849908828735
+23:09:40.980 xctest[39083:1769596] -[XCTRunnerIDESession testSuiteDidFinish:]
+23:09:41.052 Xcode[95865:1139451] _XCT_testSuite:EventSourcingTests didFinishAt:2018-02-28 21:09:40 +0000 runCount:1 withFailures:1 unexpected:0 testDuration:0.2356849908828735 totalDuration:0.2362760305404663
+23:09:40.980 xctest[39083:1769596] Activity statistics for EventSourcingTests:
+23:09:40.980 xctest[39083:1769596] 0.00s : Other
+23:09:40.980 xctest[39083:1769596] Total time in activities: 0.00s
+23:09:40.980 xctest[39083:1769596] -[XCTRunnerIDESession testSuiteDidFinish:]
+23:09:41.052 Xcode[95865:1139451] _XCT_testSuite:EventSourcingTests.xctest didFinishAt:2018-02-28 21:09:40 +0000 runCount:1 withFailures:1 unexpected:0 testDuration:0.2356849908828735 totalDuration:0.2369439601898193
+23:09:40.981 xctest[39083:1769596] Activity statistics for EventSourcingTests.xctest:
+23:09:40.981 xctest[39083:1769596] 0.00s : Other
+23:09:40.981 xctest[39083:1769596] Total time in activities: 0.00s
+23:09:40.981 xctest[39083:1769596] -[XCTRunnerIDESession testSuiteDidFinish:]
+23:09:41.052 Xcode[95865:1139451] _XCT_testSuite:Selected tests didFinishAt:2018-02-28 21:09:40 +0000 runCount:1 withFailures:1 unexpected:0 testDuration:0.2356849908828735 totalDuration:0.2383979558944702
+23:09:40.981 xctest[39083:1769596] Activity statistics for Selected tests:
+23:09:40.981 xctest[39083:1769596] 0.00s : Other
+23:09:41.052 Xcode[95865:1139451] -[XCTTestRunnerSession _XCT_didFinishExecutingTestPlan]_block_invoke
+23:09:40.981 xctest[39083:1769596] Total time in activities: 0.00s
+23:09:40.982 xctest[39083:1769596] Finished running suite.
+23:09:40.982 xctest[39083:1769596] -[XCTRunnerIDESession testBundleDidFinish:], Flushing connection to IDE...
+23:09:40.982 xctest[39083:1769596] Calling completion.
+23:09:40.982 xctest[39083:1769596] <XCTWaiter: 0x102589740, state: XCTWaiterStateInProgress> entering wait loop for 15.00s with expectations: (
+    "IDE confirmed the end of session"
+)
+23:09:41.058 Xcode[95865:1769534] Socket transport for DTX-layer communication disconnected.
+23:09:41.053 xctest[39083:1769644] <XCTWaiter: 0x102589740, state: XCTWaiterStateSucceeded>: cancelWaiting
+23:09:41.053 xctest[39083:1769596] <XCTWaiter: 0x102589740, state: XCTWaiterStateSucceeded> done waiting
+23:09:41.053 xctest[39083:1769596] <XCTWaiter: 0x102589740, state: XCTWaiterStateSucceeded> cleaning up IDE confirmed the end of session
+23:09:41.055 testmanagerd[39082:1769593] Test process connection invalidated or interrupted, closing test session <XCTestSession: 0x7ff03e011ca0>.
+23:09:41.056 testmanagerd[39082:1769592] Closed <XCTestSession: 0x7ff03e011ca0>, removing from (
+    "<XCTestSession: 0x7ff03e011ca0>"
+)
+23:09:41.056 testmanagerd[39082:1769592] Tearing down test session <XCTestSession: 0x7ff03e011ca0>.
+23:09:41.056 testmanagerd[39082:1769592] XCTestSession is responsible for cleaning up its socket from an XCIDESession
+23:09:41.056 testmanagerd[39082:1769592] Considering exiting:
+23:09:41.056 testmanagerd[39082:1769592] Session summary: 0 test sessions, 0 sessions with identifiers, 0 unidentified sessions, has control sessions, 0 pending connections
+23:09:41.056 testmanagerd[39082:1769592] Control sessions: (
+    "<XCIDESession: 0x7ff03be04350> (socket 4) created Wednesday, February 28, 2018 at 11:09:40 PM Eastern European Standard Time"
+)
+Test Suite 'Selected tests' failed at 2018-02-28 23:09:40.981.
+	 Executed 1 test, with 1 failure (0 unexpected) in 0.236 (0.238) seconds
+23:09:41.249 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: parseConsoleOutputFromOriginalOutput: called, 0 bytes written out to StandardOutputAndStandardError
+23:09:41.340 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70> finished receiving data from <IDEConsoleAdaptor: 0x7f8546246020 'target' stdin: (null) 0 stdout: (null) 0 stderr: (null) 0>
+23:09:41.340 Xcode[95865:1139451] <IDETestOperationCoordinator: 0x7f854c3e4c70>: _considerFlushingDelegateBlockQueue - nothing to flush
+23:09:41.340 Xcode[95865:1139451] _finishWithError:(null)

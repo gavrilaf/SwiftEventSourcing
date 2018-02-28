@@ -1,0 +1,4 @@
+framework module EventSourcing {
+    header "EventSourcing-Swift.h"
+    requires objc
+}

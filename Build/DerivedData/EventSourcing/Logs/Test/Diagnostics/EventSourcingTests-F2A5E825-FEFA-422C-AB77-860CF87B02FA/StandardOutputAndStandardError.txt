@@ -1,0 +1,11 @@
+Test Suite 'Selected tests' started at 2018-02-28 23:09:52.855
+Test Suite 'EventSourcingTests.xctest' started at 2018-02-28 23:09:52.856
+Test Suite 'EventSourcingTests' started at 2018-02-28 23:09:52.857
+Test Case '-[EventSourcingTests.EventSourcingTests testCreateAccount]' started.
+Test Case '-[EventSourcingTests.EventSourcingTests testCreateAccount]' passed (0.236 seconds).
+Test Suite 'EventSourcingTests' passed at 2018-02-28 23:09:53.093.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.236 (0.237) seconds
+Test Suite 'EventSourcingTests.xctest' passed at 2018-02-28 23:09:53.094.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.236 (0.237) seconds
+Test Suite 'Selected tests' passed at 2018-02-28 23:09:53.094.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.236 (0.239) seconds

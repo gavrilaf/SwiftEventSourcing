@@ -1,0 +1,53 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "Event"
+- "DepositEvent"
+- "WithdrawalEvent"
+provides-nominal:
+- "13EventSourcing0A0P"
+- "13EventSourcing07DepositA0V"
+- "13EventSourcing010WithdrawalA0V"
+provides-member:
+- ["13EventSourcing0A0P", ""]
+- ["13EventSourcing07DepositA0V", ""]
+- ["13EventSourcing010WithdrawalA0V", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- "DepositEvent"
+- "Event"
+- "Int"
+- "String"
+- "WithdrawalEvent"
+depends-member:
+- ["13EventSourcing07DepositA0V", "Int"]
+- ["13EventSourcing07DepositA0V", "String"]
+- ["13EventSourcing07DepositA0V", "aggregatorId"]
+- ["13EventSourcing07DepositA0V", "amount"]
+- ["13EventSourcing07DepositA0V", "deinit"]
+- ["13EventSourcing07DepositA0V", "init"]
+- ["13EventSourcing0A0P", "String"]
+- ["13EventSourcing0A0P", "aggregatorId"]
+- ["13EventSourcing0A0P", ""]
+- ["13EventSourcing010WithdrawalA0V", "Int"]
+- ["13EventSourcing010WithdrawalA0V", "String"]
+- ["13EventSourcing010WithdrawalA0V", "aggregatorId"]
+- ["13EventSourcing010WithdrawalA0V", "amount"]
+- ["13EventSourcing010WithdrawalA0V", "deinit"]
+- ["13EventSourcing010WithdrawalA0V", "init"]
+depends-nominal:
+- "13EventSourcing07DepositA0V"
+- "13EventSourcing0A0P"
+- "13EventSourcing010WithdrawalA0V"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "cdf3354c9169f20b0d1e414ae5910e96"

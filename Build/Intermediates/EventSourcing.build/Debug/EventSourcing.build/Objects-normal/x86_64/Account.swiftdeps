@@ -1,0 +1,220 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "AccountStatus"
+- "AccountError"
+- "CommandResult"
+- "Account"
+- "AccountImpl"
+provides-nominal:
+- "13EventSourcing13AccountStatusO"
+- "13EventSourcing12AccountErrorO"
+- "13EventSourcing7AccountP"
+- "13EventSourcing11AccountImplC"
+provides-member:
+- ["13EventSourcing13AccountStatusO", ""]
+- ["13EventSourcing12AccountErrorO", ""]
+- ["13EventSourcing7AccountP", ""]
+- ["13EventSourcing11AccountImplC", ""]
+provides-dynamic-lookup:
+depends-top-level:
+- !private "!="
+- !private "+="
+- !private "-="
+- !private "<"
+- "=="
+- "Account"
+- "AccountError"
+- "AccountImpl"
+- "AccountStatus"
+- "Array"
+- "AssignmentPrecedence"
+- "Bool"
+- !private "BooleanLiteralType"
+- "Command"
+- "CommandResult"
+- "Error"
+- "Event"
+- "FloatLiteralType"
+- "Int"
+- "IntegerLiteralType"
+- "Result"
+- "String"
+depends-member:
+- ["13EventSourcing7AccountP", "AccountStatus"]
+- !private ["13EventSourcing7AccountP", "CommandResult"]
+- ["13EventSourcing7AccountP", "Int"]
+- ["13EventSourcing7AccountP", "String"]
+- !private ["13EventSourcing7AccountP", "_balance"]
+- !private ["13EventSourcing7AccountP", "_status"]
+- ["13EventSourcing7AccountP", "balance"]
+- !private ["13EventSourcing7AccountP", "deposit"]
+- ["13EventSourcing7AccountP", "id"]
+- !private ["13EventSourcing7AccountP", "load"]
+- ["13EventSourcing7AccountP", "status"]
+- !private ["13EventSourcing7AccountP", "update"]
+- !private ["13EventSourcing7AccountP", "withdrawal"]
+- ["13EventSourcing7AccountP", ""]
+- ["13EventSourcing12AccountErrorO", "AccountStatus"]
+- ["13EventSourcing12AccountErrorO", "Int"]
+- ["13EventSourcing12AccountErrorO", "_code"]
+- ["13EventSourcing12AccountErrorO", "_domain"]
+- ["13EventSourcing12AccountErrorO", "_getEmbeddedNSError"]
+- ["13EventSourcing12AccountErrorO", "_userInfo"]
+- ["13EventSourcing12AccountErrorO", "deinit"]
+- ["13EventSourcing12AccountErrorO", "invalidStatus"]
+- ["13EventSourcing12AccountErrorO", "notEnoughFunds"]
+- ["13EventSourcing12AccountErrorO", "notFound"]
+- ["13EventSourcing11AccountImplC", "AccountStatus"]
+- ["13EventSourcing11AccountImplC", "Array"]
+- ["13EventSourcing11AccountImplC", "Command"]
+- ["13EventSourcing11AccountImplC", "CommandResult"]
+- ["13EventSourcing11AccountImplC", "Event"]
+- ["13EventSourcing11AccountImplC", "Int"]
+- ["13EventSourcing11AccountImplC", "String"]
+- !private ["13EventSourcing11AccountImplC", "_balance"]
+- !private ["13EventSourcing11AccountImplC", "_status"]
+- ["13EventSourcing11AccountImplC", "balance"]
+- ["13EventSourcing11AccountImplC", "deinit"]
+- !private ["13EventSourcing11AccountImplC", "deposit"]
+- ["13EventSourcing11AccountImplC", "handle"]
+- ["13EventSourcing11AccountImplC", "id"]
+- ["13EventSourcing11AccountImplC", "init"]
+- !private ["13EventSourcing11AccountImplC", "load"]
+- ["13EventSourcing11AccountImplC", "status"]
+- !private ["13EventSourcing11AccountImplC", "update"]
+- !private ["13EventSourcing11AccountImplC", "withdrawal"]
+- ["13EventSourcing13AccountStatusO", "AccountStatus"]
+- ["13EventSourcing13AccountStatusO", "Bool"]
+- ["13EventSourcing13AccountStatusO", "__derived_enum_equals"]
+- ["13EventSourcing13AccountStatusO", "activated"]
+- ["13EventSourcing13AccountStatusO", "closed"]
+- ["13EventSourcing13AccountStatusO", "created"]
+- ["13EventSourcing13AccountStatusO", "deinit"]
+- ["13EventSourcing13AccountStatusO", "hashValue"]
+- ["13EventSourcing13AccountStatusO", "isTransferAllowed"]
+- ["13EventSourcing13AccountStatusO", "suspended"]
+- ["13EventSourcing13AccountStatusO", "transferMap"]
+- !private ["s13BinaryIntegerP", "hashValue"]
+- !private ["Sb", "_getBuiltinLogicValue"]
+- !private ["s7CVarArgP", "hashValue"]
+- ["13EventSourcing7CommandO", "activate"]
+- ["13EventSourcing7CommandO", "close"]
+- ["13EventSourcing7CommandO", "deposit"]
+- ["13EventSourcing7CommandO", "lock"]
+- ["13EventSourcing7CommandO", "unlock"]
+- ["13EventSourcing7CommandO", "withdraw"]
+- !private ["s10ComparableP", "hashValue"]
+- !private ["s28CustomDebugStringConvertibleP", "activated"]
+- !private ["s29CustomPlaygroundQuickLookableP", "_getBuiltinLogicValue"]
+- !private ["s29CustomPlaygroundQuickLookableP", "hashValue"]
+- !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
+- !private ["s17CustomReflectableP", "activated"]
+- !private ["s17CustomReflectableP", "hashValue"]
+- !private ["s23CustomStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s23CustomStringConvertibleP", "hashValue"]
+- !private ["s9DecodableP", "_getBuiltinLogicValue"]
+- !private ["s9DecodableP", "activated"]
+- !private ["s9DecodableP", "hashValue"]
+- !private ["s9EncodableP", "_getBuiltinLogicValue"]
+- !private ["s9EncodableP", "activated"]
+- !private ["s9EncodableP", "hashValue"]
+- !private ["s9EquatableP", "_getBuiltinLogicValue"]
+- ["s9EquatableP", "activated"]
+- ["s9EquatableP", "closed"]
+- ["s9EquatableP", "created"]
+- ["s9EquatableP", "hashValue"]
+- !private ["s9EquatableP", "isTransferAllowed"]
+- ["s9EquatableP", "suspended"]
+- ["s9EquatableP", ""]
+- ["s5ErrorP", "_code"]
+- ["s5ErrorP", "_domain"]
+- ["s5ErrorP", "_getEmbeddedNSError"]
+- ["s5ErrorP", "_userInfo"]
+- !private ["s5ErrorP", "invalidStatus"]
+- !private ["s5ErrorP", "notEnoughFunds"]
+- ["s5ErrorP", ""]
+- !private ["13EventSourcing0A0O", "changeStatus"]
+- !private ["13EventSourcing0A0O", "deposit"]
+- !private ["13EventSourcing0A0O", "withdraw"]
+- !private ["s27ExpressibleByBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s27ExpressibleByIntegerLiteralP", "hashValue"]
+- !private ["s23ExpressibleByNilLiteralP", "activated"]
+- !private ["s17FixedWidthIntegerP", "hashValue"]
+- !private ["s8HashableP", "_getBuiltinLogicValue"]
+- ["s8HashableP", "activated"]
+- ["s8HashableP", "closed"]
+- ["s8HashableP", "created"]
+- ["s8HashableP", "hashValue"]
+- !private ["s8HashableP", "isTransferAllowed"]
+- ["s8HashableP", "suspended"]
+- ["s8HashableP", ""]
+- !private ["Si", "hashValue"]
+- !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
+- !private ["s25LosslessStringConvertibleP", "hashValue"]
+- !private ["s10MirrorPathP", "hashValue"]
+- !private ["s7NumericP", "hashValue"]
+- !private ["Sq", "activated"]
+- !private ["13EventSourcing6ResultO", "init"]
+- !private ["s13SignedIntegerP", "hashValue"]
+- !private ["s13SignedNumericP", "hashValue"]
+- !private ["s10StrideableP", "hashValue"]
+- !private ["s18_BitwiseOperationsP", "hashValue"]
+- !private ["s35_ExpressibleByBuiltinBooleanLiteralP", "_getBuiltinLogicValue"]
+- !private ["s35_ExpressibleByBuiltinIntegerLiteralP", "hashValue"]
+- !private ["s21_ObjectiveCBridgeableP", "_getBuiltinLogicValue"]
+- !private ["s21_ObjectiveCBridgeableP", "activated"]
+- !private ["s21_ObjectiveCBridgeableP", "hashValue"]
+- !private ["s26_OptionalNilComparisonTypeV", "activated"]
+- !private ["s11_StrideableP", "hashValue"]
+depends-nominal:
+- "13EventSourcing7AccountP"
+- "13EventSourcing12AccountErrorO"
+- "13EventSourcing11AccountImplC"
+- "13EventSourcing13AccountStatusO"
+- !private "s13BinaryIntegerP"
+- !private "Sb"
+- !private "s7CVarArgP"
+- "13EventSourcing7CommandO"
+- !private "s10ComparableP"
+- !private "s28CustomDebugStringConvertibleP"
+- !private "s29CustomPlaygroundQuickLookableP"
+- !private "s17CustomReflectableP"
+- !private "s23CustomStringConvertibleP"
+- !private "s9DecodableP"
+- !private "s9EncodableP"
+- "s9EquatableP"
+- "s5ErrorP"
+- !private "13EventSourcing0A0O"
+- !private "s27ExpressibleByBooleanLiteralP"
+- !private "s27ExpressibleByIntegerLiteralP"
+- !private "s23ExpressibleByNilLiteralP"
+- !private "s17FixedWidthIntegerP"
+- "s8HashableP"
+- !private "Si"
+- !private "s25LosslessStringConvertibleP"
+- !private "s10MirrorPathP"
+- !private "s7NumericP"
+- !private "Sq"
+- !private "13EventSourcing6ResultO"
+- !private "s13SignedIntegerP"
+- !private "s13SignedNumericP"
+- !private "s10StrideableP"
+- !private "s18_BitwiseOperationsP"
+- !private "s35_ExpressibleByBuiltinBooleanLiteralP"
+- !private "s35_ExpressibleByBuiltinIntegerLiteralP"
+- !private "s21_ObjectiveCBridgeableP"
+- !private "s26_OptionalNilComparisonTypeV"
+- !private "s11_StrideableP"
+depends-dynamic-lookup:
+depends-external:
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.apinotesc"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/ObjectiveC.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Dispatch.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Darwin.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Foundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreFoundation.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/CoreGraphics.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/Swift.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/IOKit.swiftmodule"
+- "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/macosx/x86_64/SwiftOnoneSupport.swiftmodule"
+interface-hash: "d87f9438b8b684e886f858df8d85bac7"
