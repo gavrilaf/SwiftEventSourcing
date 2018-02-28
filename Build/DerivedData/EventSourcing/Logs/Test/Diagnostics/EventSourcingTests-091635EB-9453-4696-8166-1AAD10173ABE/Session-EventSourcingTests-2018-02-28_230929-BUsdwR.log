@@ -1,5 +1,0 @@
-23:09:29.080 Xcode[95865:1139451] Beginning test session EventSourcingTests-7A7C54EE-6B04-4BE0-B88D-081CCBE310A7 at 2018-02-28 23:09:29.080 with Xcode 9C40b on target <DVTLocalComputer: 0x7f85948a7e70 (My Mac | x86_64h)> (10.13.3 (17D102))
-23:09:29.080 Xcode[95865:1139451] Launching with Xcode.DebuggerFoundation.Launcher.LLDB
-23:09:29.081 Xcode[95865:1139451] Test standard output and standard error is at /var/folders/xh/1rlb62b16cz8lbvxz67gyvf80000gn/T/com.apple.dt.XCTest/IDETestRunSession-0960F71A-DD6F-4ECF-9ECD-66C317CFB5EC/EventSourcingTests-091635EB-9453-4696-8166-1AAD10173ABE/StandardOutputAndStandardError.txt
-23:09:29.524 Xcode[95865:1139451] Test operation failure: Test operation was canceled.
-23:09:29.524 Xcode[95865:1139451] _finishWithError:Error Domain=IDETestOperationsObserverErrorDomain Code=14 "Test operation was canceled." UserInfo={NSLocalizedDescription=Test operation was canceled.}

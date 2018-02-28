@@ -1,5 +1,0 @@
-version: "Apple Swift version 4.0.3 (swiftlang-900.0.74.1 clang-900.0.39.2)"
-options: "173f69b433c5d835f6d5da3b4c916853"
-build_time: [1519852284, 374236000]
-inputs:
-  "/Users/eugenf/Documents/Projects/Swift/my-github/SwiftEventSourcing/Tests/EventSourcingTests/EventSourcingTests.swift": [1519852281, 0]

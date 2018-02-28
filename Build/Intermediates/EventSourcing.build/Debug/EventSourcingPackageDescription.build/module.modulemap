@@ -1,4 +1,0 @@
-framework module EventSourcingPackageDescription {
-    header "EventSourcingPackageDescription-Swift.h"
-    requires objc
-}
